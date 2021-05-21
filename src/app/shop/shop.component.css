@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+div{
+  font-family: 'Roboto Condensed', Regular;
+  font-size: 16px;
+}
+
+
+.menu{
+  margin: 35px auto;
+}
+
+
+.menu-list{
+  z-index: 2;
+  position: relative;
+  display: flex;
+justify-content: center;
+}
+
+.menu-item{
+  margin-right: 20px;
+}
+
+.menu-link{
+  color: black;
+}
+
+.menu-list>.menu-item:hover .sub_menu-list{
+  display: block;
+}
+
+.sub_menu-list{
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  padding-top: 10px ;
+  display: none;
+}
+.sub_menu-list>.sub_menu_item{
+background-color: white;
+}
+
+.sub_menu-link{
+  color: black;
+}
+
+
+.slide_but{
+  max-width: 330px;
+  margin: 20px auto;
+  right:50%;
+  display: flex;
+}
+
+.slide_take{
+  margin-right: 15px;
+
+}
+
+.slide_take a{
+  color: black;
+  padding: 5px 10px;
+}
+
+
+.slide_take{
+  cursor: pointer;
+}
+
+
+.active{
+  background-color: grey;
+  opacity: 90%;
+  border-radius:3px;
+}

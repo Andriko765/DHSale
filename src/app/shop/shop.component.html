@@ -1,0 +1,149 @@
+<div class="menu">
+  <div class="menu-list">
+    <div class="menu-item">
+    <a  class="menu-link">Велосипеди</a>
+      <div class="sub_menu-list">
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link">Жіночі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Чоловічі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Дитячі</a>
+        </div>
+      </div>
+  </div>
+
+    <div class="menu-item">
+      <a  class="menu-link">Екіпировка</a>
+      <div class="sub_menu-list">
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link">Жіночі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Чоловічі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Дитячі</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <a  class="menu-link">Одежа</a>
+      <div class="sub_menu-list">
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link">Жіночі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Чоловічі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Дитячі</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <a  class="menu-link">Компоненти</a>
+      <div class="sub_menu-list">
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link">Жіночі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Чоловічі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Дитячі</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <a  class="menu-link">Аксессуари</a>
+      <div class="sub_menu-list">
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link">Жіночі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Чоловічі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Дитячі</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <a  class="menu-link">Велохімія</a>
+      <div class="sub_menu-list">
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link">Жіночі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Чоловічі</a>
+        </div>
+        <div class="sub_menu_item">
+          <a href="" class="sub_menu-link"> Дитячі</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="splide" id="splide_new" style="min-height: 180px;  ">
+  <div class="splide__track " style=" ">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="https://kozakshop.com.ua/content/images/40/39663514301432_+3b31acbcbb.jpg" alt="">
+      </li>
+      <li class="splide__slide"> <img src="https://kozakshop.com.ua/content/images/29/93826598863513_+16a688ed63.jpg" alt=""></li>
+
+            <li class="splide__slide"><img src="https://kozakshop.com.ua/content/images/22/98184700040488_+521e32bf47.jpg" alt=""></li>
+
+
+            <li class="splide__slide"><img src="https://kozakshop.com.ua/content/images/43/68286482367221_+71ce99ac3f.jpg " alt=""></li>
+
+            <li class="splide__slide"><img src="https://kozakshop.com.ua/content/images/20/35656680672963_+9df2690bd8.jpg" alt=""></li>
+
+            <li class="splide__slide"><img src="https://kozakshop.com.ua/content/images/27/79249955188040_+7982a49606.jpg        " alt=""></li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="slide_but" >
+  <div id="1" class="slide_take " tab-name= "tab1" (click)="flag = 1; " >
+    <a class="listen active" tab-name= "tab1" >Хіт продажу</a>
+  </div>
+
+  <div id="2" class="slide_take" tab-name="tab2"  (click)="flag = 2 ; " >
+    <a class="listen" tab-name="tab2">Розпродажа</a>
+  </div>
+
+  <div id="3" class="slide_take" tab-name="tab3"  (click)="flag = 3; " >
+    <a class="listen" tab-name="tab3">Новинки</a>
+  </div>
+</div>
+
+<div class="view" >
+<app-hits *ngIf="flag===1" ></app-hits>
+  <app-new-stock *ngIf="flag===2"></app-new-stock>
+  <app-sale *ngIf="flag===3"></app-sale>
+</div>
+
+<app-cordion></app-cordion>
+
+
+

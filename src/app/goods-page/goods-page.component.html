@@ -1,0 +1,110 @@
+<section style="display:flex; margin-top: 15px">
+<div class="photos_goods">
+
+  <div class="secondary-slider "  style="margin-right: 20px"  >
+    <div class="splide__track " >
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="https://via.placeholder.com/150" alt="">
+        </li>
+        <li class="splide__slide"  ><img src="https://via.placeholder.com/150" alt=""></li>
+        <li class="splide__slide" ><img src="https://via.placeholder.com/150" alt=""></li>
+
+        <li class="splide__slide"><img src="https://via.placeholder.com/150" alt=""></li>
+
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="primary-slider"  style="min-height: 180px; width: 70%;  ">
+    <div class="splide__track " >
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="https://via.placeholder.com/150" alt="">
+        </li>
+        <li class="splide__slide"  ><img src="https://via.placeholder.com/150" alt=""></li>
+        <li class="splide__slide" ><img src="https://via.placeholder.com/150" alt=""></li>
+
+        <li class="splide__slide"><img src="https://via.placeholder.com/150" alt=""></li>
+
+
+      </ul>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="make_order">
+  <div class="item_name" style="font-size: 18px; font-weight: 500">
+    Покрышка Hutchinson SKELETON 29X2.15 TLS RLAB HARDSKIN
+  </div>
+  <div class="wrap" style="display: flex; font-size: 12px">
+  <div class="in_stock" style="color: limegreen">
+    В наличии
+  </div>
+
+  <div class="article " style="margin-left:15px">Артикул:</div>
+</div>
+  <div class="price" >
+    1485 грн  <button type="button" class="buy">Купити</button>
+
+  </div>
+  <hr style="margin: 15px auto 10px; ">
+
+  <div class="spec">
+    <div class="title_spec">
+      Характеристики
+    </div>
+    <div class="spec_">
+
+    </div>
+  </div>
+
+  <hr style="margin-bottom: 10px; ">
+  <div class="take_lable">
+    <div id="click"  class="delivery active" (click)="deliverSelect()">
+      Доставка
+    </div>
+    <div class="delivery" (click)="paymentSelect()">
+      Оплата
+    </div>
+    <div class="delivery" (click)="garantiSelect()">
+      Гарантія
+    </div>
+  </div>
+
+  <div class="deliver" *ngIf="flag == 1 " style="font-family: 'Roboto Condensed', Light">
+    <em style="color: red; font-weight: 700">"Новою поштою"</em> по Україні від 40 грн.     <em style="color: #fad13c; font-weight: 700">Укрпоштою</em> по СНГ
+
+  </div>
+
+  <div class="deliver" *ngIf="flag == 2">
+    <ul class="garanty">
+      <li>Готівкою пр отриманні</li>
+      <li>Кредитною картою <em style="color: mediumseagreen;font-weight: 700">Privat24</em>, <em style="color: dodgerblue;font-weight: 700">Monobank</em></li>
+      <li>Через касу або терммінал самообслуговування Приватбанк</li>
+    </ul>
+  </div>
+
+  <div class="deliver" *ngIf="flag == 3" style="font-family: 'Roboto Condensed', Light">
+    Гарантія виробником
+  </div>
+
+</div>
+</section>
+
+<hr>
+
+<section >
+  <div class="about">
+    aBOUT
+  </div>
+</section>

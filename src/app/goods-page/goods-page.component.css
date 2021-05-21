@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+.photos_goods{
+width: 50%;
+  color: #77fdc8;
+  display: flex;
+  margin: 15px 15px 15px 5px;
+  justify-content: center;
+}
+
+.make_order{
+  width: 50%;
+
+}
+
+.price{
+  margin-top: 15px;
+  font-size: 25px ;
+  font-weight: 1000;
+}
+
+.take_lable{
+  display: flex;
+
+}
+
+.buy {
+  font-family: 'Roboto Condensed', Regular;
+  font-size: 14px;
+  width: 70px;
+  height: 30px;
+  color: white;
+  background: black;
+  border-radius: 3px;
+  border-color: black;
+  transform: translateY(-5px);
+  margin-left: 20px;
+}
+
+
+.title_spec,.delivery{
+  font-family: 'Roboto Condensed', Regular, serif;
+  font-weight: 400;
+  font-size: 18px ;
+
+}
+
+.delivery{
+  position: relative;
+  color: gray;
+  opacity: 75%;
+}
+
+.delivery:active{
+  color: black;
+  opacity: 100%;
+
+}
+
+.delivery:before{
+transform: translateY(-11px);
+}
+
+
+
+.delivery:first-child:before{
+  content: "";
+  width: 75px;
+  height: 1px;
+  position: absolute;
+
+  background-color: black;
+}
+
+.delivery:nth-child(2):before{
+  content: "";
+  width: 55px;
+  height: 1px;
+  position: absolute;
+
+  background-color: black;
+}
+
+.delivery:last-child:before{
+  content: "";
+  width: 65px;
+  height: 1px;
+position: absolute;
+  background-color: black;
+  top:0;
+}
+
+.delivery:hover{
+  color: grey;
+  opacity: 100%;
+  transition: .2s opacity, color ;
+}
+
+.active{
+  color: green;
+}
+
+
+.deliver{
+  margin-top: 15px;
+}
+
+.delivery:nth-child(2){
+  margin: 0 25px ;
+}
+
+.garanty{
+  font-family: 'Roboto Condensed', Light;
+}
